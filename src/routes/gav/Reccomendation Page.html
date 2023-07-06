@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul>
+        <div class="dropdown1">
+          <button class="button"><img class="burger" src="Hamburger.png"></button>
+          <div class="dropdown-content1">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="infovideo.html">Info and Video</a></li>
+          </div>
+        </div>
+      </ul>
+      <h1 class ="PCbuild">PC Builder</h1>
+    </div>
+  </nav>
+  
+  <header>
+      <img id="undoButton" src="undoImg.png" onclick="undoSelection()"></img>
+      <img id="saveButton" src="saveImg.png" onclick="saveSelection()"></img>
+  </header>
+  
+  <main>
+    <div class="column">
+      <h2>Prices</h2>
+      <p>Please select the components.</p>
+    </div>
+    
+    <div class="column">
+      <h2>Overview</h2>
+      <div class="box-column">
+        <button class="box" onclick="openMenu(1)">Case</button>
+        <button class="box" onclick="openMenu(2)">Motherboard</button>
+        <button class="box" onclick="openMenu(3)">Cpu</button>
+        <button class="box" onclick="openMenu(4)">GPU</button>
+        <button class="box" onclick="openMenu(5)">Cooling</button>
+        <button class="box" onclick="openMenu(6)">Power Supply</button>
+        <button class="box" onclick="openMenu(7)">RAM</button>
+        <button class="box" onclick="openMenu(8)">Storage</button>
+      </div>
+    </div>
+
+    <div class="column" id="menuColumn">
+      <h2>List of Parts</h2>
+      <div id="menuContent">
+        
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

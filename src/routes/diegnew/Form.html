@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - PC Builder</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body class="body">
+    <header class>
+      <div class="container">
+        <ul>
+          <div class="dropdown1">
+            <button class="butt"><img class="burger" src="Hamburger.png"></button>
+            <div class="dropdown-content1">
+              <li><a href="home.html">HOME</a></li>
+              <li><a href="infovideo.html">Info and Video</a></li>
+            </div>
+          </div>
+        </ul>
+        <h1 class ="PCbuild">PC Builder</h1>   
+    </div>
+    </header>
+    <main>
+      <h1 class ="text1">Let's Build Your PC!</h1>
+      <h2 class ="text2">Please Answer These Questions!</h2>
+      <div class="form-container">
+        <div class="form-question1">
+          <label class="question-label">What Are you planning to use this PC for?:</label>
+          <div class="form-option1">
+            <input type="radio" id="type-family" name="type" value="family" required>
+            <label for="type-family">Family PC</label>
+          </div>
+          <div class="form-option2">
+            <input type="radio" id="type-work" name="type" value="work" required>
+            <label for="type-work">Work PC</label>
+          </div>
+          <div class="form-option3">
+            <input type="radio" id="type-gaming" name="type" value="gaming" required>
+            <label for="type-gaming">Gaming PC</label>
+          </div>
+          <div class="form-option4">
+            <input type="radio" id="type-media-creation" name="type" value="media-creation" required>
+            <label for="type-media-creation">Media Creation PC</label>
+          </div>
+          <div class="form-option5">
+            <input type="radio" id="type-other" name="type" value="other" required>
+            <label for="type-other">Other</label>
+          </div>
+        </div>
+        <div class="form-question2">
+          <label class="question-label">What chipset brand you want to choose?:</label>
+          <div class="form-option2">
+            <input type="radio" id="chip-intel" name="chip" value="intel" required>
+            <label for="chip-intel">Intel</label>
+          </div>
+          <div class="form-option3">
+            <input type="radio" id="chip-AMD" name="chip" value="AMD" required>
+            <label for="chip-AMD">AMD</label>
+          </div>
+          <div class="form-option6">
+            <input type="radio" id="chip-non" name="type" value="non" required>
+            <label for="chip-non">No Preference</label>
+          </div>
+        </div>
+        <div class="form-question3">
+          <label class="question-label">What Graphic Card brand you want to choose?:</label>
+          <div class="form-option2">
+            <input type="radio" id="gpu-nvidia" name="gpu" value="nvidia" required>
+            <label for="gpu-nvidia">Nvidia</label>
+          </div>
+          <div class="form-option3">
+            <input type="radio" id="gpu-AMD" name="gpu" value="AMD" required>
+            <label for="gpu-AMD">AMD</label>
+          </div>
+          <div class="form-option6">
+            <input type="radio" id="gpu-non" name="gpu" value="non" required>
+            <label for="gpu-non">No Preference</label>
+          </div>
+        </div>
+        <div class="form-question4">
+            <label class="question-label">Please Set Your Budget!</label>
+            <div class="budget-displays">
+            <div id="budget-display">10000K IDR</div>
+            </div>
+            <div>
+              <button id="decrease-button" class="budget-button1">-</button>
+              <button id="increase-button" class="budget-button2">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "continue">
+      <a href="reccomended.html" class = "contlink">Continue</a></li>
+    </div>
+   </main>
+   <script src="myscripts.js"></script>
+  </body>
+  </html>
